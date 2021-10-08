@@ -62,25 +62,4 @@ public class main {
             session.close();
         }
     }
-    private static void testOneToOne() {
-        Session session = getSession();
-        try {
-            Metamodel metamodel = session.getSessionFactory().getMetamodel();
-            for (EntityType<?> entityType : metamodel.getEntities()) {
-                Query query = session.createQuery("from " + entityType.getName());
-
-                System.out.println("[Test] Alle objecten van type " + entityType.getName() + " uit database:");
-                List<Reiziger> employees = session.createQuery("from Reiziger ").list();
-                for (Reiziger reiziger : employees) {
-                    System.out.println(reiziger.getReiziger_id() + " , "
-                            + reiziger.getAchternaam() + ", "
-                            + reiziger.getAdres());
-                }
-
-                session.getTransaction().commit();
-            }
-        } finally {
-            session.close();
-        }
-    }
 }
