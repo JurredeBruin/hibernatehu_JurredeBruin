@@ -1,7 +1,5 @@
 package hibernate;
 
-import hibernate.Reiziger;
-
 import javax.persistence.*;
 import java.util.ArrayList;
 import java.util.Date;

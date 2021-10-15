@@ -13,10 +13,14 @@
 
          <property name="show_sql">true</property>
          <property name="format_sql">true</property>
-        <mapping class="hibernate.Adres"/>
-        <mapping class="hibernate.OVChipkaart"/>
-        <mapping class="hibernate.Product"/>
-        <mapping class="hibernate.Reiziger"/>
+<!--        <mapping class="hibernate.Adres"/>-->
+<!--        <mapping class="hibernate.OVChipkaart"/>-->
+<!--        <mapping class="hibernate.Product"/>-->
+<!--        <mapping class="hibernate.Reiziger"/>-->
+        <mapping class="hibernate_p7.Adres"/>
+        <mapping class="hibernate_p7.OVChipkaart"/>
+        <mapping class="hibernate_p7.Product"/>
+        <mapping class="hibernate_p7.Reiziger"/>
 
     </session-factory>
 </hibernate-configuration>

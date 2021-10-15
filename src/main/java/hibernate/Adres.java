@@ -1,7 +1,5 @@
 package hibernate;
 
-import hibernate.Reiziger;
-
 import javax.persistence.*;
 
 @Entity
